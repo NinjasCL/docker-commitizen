@@ -1,0 +1,39 @@
+# Docker Commitizen
+
+This is a _Docker_ configuration that helps using
+https://github.com/commitizen/cz-cli[Commitizen].
+
+## Requirements
+
+- https://www.docker.com/[Docker]
+- https://en.wikipedia.org/wiki/Makefile[Make]
+
+## Available Tools
+
+- https://github.com/commitizen/cz-cli[Commitizen].
+- https://github.com/conventional-changelog/conventional-changelog[Conventional Changelog].
+
+## Usage
+
+### Configure your .gitconfig
+
+Use the _.gitconfig.example_ file and fill your credentials.
+This is needed for git to work inside the _Docker Container_.
+
+### Makefile
+
+All the commands are inside this file. You can modify
+`IMAGE_COMMITIZEN` and `RUN_COMMITIZEN` variables to suit your needs.
+
+### `$ make node-install-commitizen`
+
+This command will build the `container`. And rename ``.gitconfig.example` to `.gitconfig`.
+
+### `$ make commit`
+
+This command will execute _commitizen_ inside the container.
+You could also use the provided alias `git cz` to trigger this command. Be sure to use `git add` before using the _commitizen_ flow.
+
+++++
+Made with <i class="fa fa-heart">&#9829;</i> by <a href="https://ninjas.cl" target="_blank">Ninjas.cl</a>.
+++++

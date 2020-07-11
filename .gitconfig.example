@@ -1,0 +1,7 @@
+[user]
+    name = MY_NAME
+    email = MY_EMAIL_ADDRESS
+[alias]
+   # Make commit using commitizen inside Docker
+   # usage: git cz
+   cz = "!make commit"

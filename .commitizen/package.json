@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cz-conventional-changelog": "3.2.0",
+    "git-cz": "4.7.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog",
+      "disableEmoji": true
+    }
+  }
+}
